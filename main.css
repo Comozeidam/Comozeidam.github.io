@@ -1,0 +1,248 @@
+/*
+ CSS HEX 
+--barn-red: #750e00ff;
+--international-orange-golden-gate-bridge: #c23523ff;
+--cadet-grey: #8499a9ff;
+--baby-powder: #fdfff7ff;
+--space-cadet: #192a51ff;
+*/
+.color1{
+  background-color:#fdfff7ff;
+  color:#ffffff;
+}
+.color2{
+  background-color:#8499a9ff;
+  color:#ffffff;
+}
+.color3{
+  background-color:#192a51ff;
+  color: #ffffff;
+}
+.color4{
+  background-color: #750e00ff ;
+  color:#ffffff;
+}
+.color5{
+  background-color: #c23523ff;
+  color:#ffffff;
+}
+/*Blog Post Card*/
+.card {
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: rgb(235, 235, 235);
+}
+.grayText{
+  color:gray !important;
+}
+/*Centers Image on Blog*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+  max-width: 75%  !important;
+  max-height: 75% !important;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+/*Format Imgs*/
+img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+/*Title*/
+header{
+  font-family:cursive;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-size: 25px;
+  text-align: center; 
+   
+}
+/*Post on grid*/
+.blogPost{
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 5%;
+}
+/*Blog Text*/
+.blogtext{
+  padding-left:12.5%;
+  padding-right: 12.5%;
+}
+/*Large Text*/
+.fontLargetitle{
+  font-size: 75px;
+  
+}
+/*Title Of blog*/
+.blogtitle{
+  padding-left:12.5%;
+}
+/*Any Text I write*/
+.mainText {
+  font-family: 'Merriweather', "Times New Roman", "san-serif";
+  text-decoration: none;
+  color: black;
+}
+/*Cols and row*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left {
+  flex: 30%; 
+  background-color: #f1f1f1; /* Grey background color */
+  
+}
+.right {
+  flex: 20%;
+  background-color: #f1f1f1; /* Grey background color */
+ 
+}
+
+.main {
+  flex: 50%; 
+  background-color: white; /* White background color */
+  padding: 20px; 
+}
+/*Footer*/
+.contact {
+   /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+  text-decoration: none;
+  flex: 50%;
+}
+
+/*Makes Font size of caption small and changes color*/
+.caption{
+  font-size: 12px;
+  color: black;
+  
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/*Nav Bar*/
+nav {
+  overflow: hidden; 
+  
+}
+nav a {
+  float: left; 
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none; 
+  
+}
+nav a.right {
+   
+  background-color:#192a51ff;
+}
+nav a:hover {  
+  background-color:#8499a9ff;
+  color:white; 
+}
+* {
+  box-sizing: border-box;
+} 
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+  .navbar a.right {
+    float: none;
+    width: 100%;
+  }
+  
+}
+@media screen and (min-width: 400px) {
+  
+  .navbar a.right {
+    float: right;
+    
+  }
+}
+@media screen and (min-width: 701px) {
+  .header{
+    font-size: 50px;
+  }
+}
+.rowimg {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columnimg {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.columnimg img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columnimg {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnimg {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  nav a {
+    float: none; 
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+    
+  }
+
+  
+}
+@media screen and (max-width: 445px) {
+
+    html{
+      text-align:center;
+      display: block;
+          }
+    header{
+      font-size:16px;
+      
+    }
+  
+  }
