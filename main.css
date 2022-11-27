@@ -6,6 +6,9 @@
 --baby-powder: #fdfff7ff;
 --space-cadet: #192a51ff;
 */
+.white{
+  color:white
+}
 .color1{
   background-color:#fdfff7ff;
   color:#ffffff;
@@ -26,11 +29,15 @@
   background-color: #c23523ff;
   color:#ffffff;
 }
+.color6{
+  background-color: #564138;
+  color:#ffffff;
+}
 /*Blog Post Card*/
 .card {
   margin-left: 25%;
   margin-right: 25%;
-  background-color: rgb(235, 235, 235);
+  
 }
 .grayText{
   color:gray !important;
