@@ -5,7 +5,7 @@
 */
 /* for link bar box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23)*/
 .testimg {
-  height: 200px;
+  height: 150px;
   width:100%;
   background: #aaa;
   text-align: center;
@@ -27,6 +27,7 @@ header{
   font-family: "owners-text", sans-serif;
   font-weight: 400;
   
+  
 }
 .title{
   font-family: "gelica", sans-serif !important;
@@ -35,4 +36,7 @@ header{
 }
 .nav{
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23)
+}
+img{
+  opacity: 1;
 }

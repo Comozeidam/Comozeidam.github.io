@@ -2,43 +2,22 @@
 <html lang="en">
   <head>
     
-    <title>Comozeidam</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://use.typekit.net/svz7tyd.css">
-    <link rel="icon"  href="/img/favicon.ico">
-    <!-- Bootstrap CSS CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap CSS local fallback -->
-    <script>
-      var test = document.createElement("div");
-      test.className = "hidden d-none";
-
-      document.head.appendChild(test);
-      var cssLoaded = window.getComputedStyle(test).display === "none";
-      document.head.removeChild(test);
-
-      if (!cssLoaded) {
-        var link = document.createElement("link");
-        link.type = "text/css";
-        link.rel = "stylesheet";
-        link.href = "lib/bootstrap.min.css";
-
-        document.head.appendChild(link);
-      }
-    </script>
-  <link rel="stylesheet" href="main.css">
-  <meta name="description" content="This is the Red Globe blog.">
-	<meta name="theme-color" content="#750e00ff"/>
-	<link rel="shortcut icon" href="Images\favicon.ico"/>
-  </head>
+      <title>Comozeidam</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://use.typekit.net/svz7tyd.css">
+      <link rel="icon"  href="/img/favicon.ico">
+      <!--For Quick Loading the local copy of Bootstrap is used-->
+      
+      <link rel="stylesheet" href="lib\bootstrap.min.css">
+      <meta name="description" content="This is the Red Globe blog.">
+	    <link rel="shortcut icon" href="Images\favicon.ico"/>
+    </head>
   <body class="primary mainfont">
-
-    <ul class="nav mainfont" >
-    <img src="img/Globe.png" alt="">
+<nav class=" nav container-fluid opacity position-fixed">
+  
+    <ul class=" nav container-fluid opacity-75 position-fixed" >
+      <img  src="img/Globe.png" alt="">
     <li class="nav-item pt-2">
         <a class="nav-link text-black">Link</a>
       </li>
@@ -50,7 +29,7 @@
       </li>
       
     </ul>
- 
+</nav>
     
       <div class=" container-fluid text-center">
         <h2 class="title">Featured Image</h2>
@@ -59,20 +38,82 @@
         <h4 class="text-black-50 ">Location: <a class="link-dark text-black-50 link-underline-opacity-0"href="https://essexcountyparks.org/parks/south-mountain-reservation">South Mountain
 						Reservation</a></h4>
         </div>
+        <div class="vr"></div>
+        <div class=" container-fluid row">
+          <div class="col-7 "><h2 class="title">Featured Article</h2>
+            <div class="card" >
+             
+             <div class="testimg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Article</h5>
+                <p class="card-text">This is a article and I am under the water please help here too much raining. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus incidunt facilis consectetur vero in.</p>
+                <a href="#" class="btn btn-primary ">Link to Article</a>
+              </div>
+            </div>
+            </div>
+          <div class="  col-5"><h2 class="title"> Articles:</h2>
+            <div class=" mainfont p-4 pt-0 pb-0 ">
+              <a href="#" class=" link-underline-opacity-0 ">Tile</a>
+              <p class=" text-black-50">8-20-21</p>
+              <a href="#" class="link-underline link-underline-opacity-0 ">Title</a>
+              <p class=" text-black-50">10-9-2009</p>
+              <a href="#" class="link-underline link-underline-opacity-0 ">Title</a>
+              <p class="text-black-50">10-9-2009</p>
+              <a href="#" class="link-underline link-underline-opacity-0 ">Title</a>
+              <p class="text-black-50">10-9-2009</p>
+              <a href="#" class="link-underline link-underline-opacity-0 ">Title</a>
+              <p class="text-black-50">10-9-2009</p>
+             </div>
+          
+        </div>
+
      
     
 
     <footer class="mt-5 p-4 bg-dark text-white text-center">
       <p>Footer</p>
+    
+    
+    
+    
+    <div>    <!-- Bootstrap CSS CDN -->
+      <script>
+        var link = document.createElement("link");
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        link.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css";
+        document.head.appendChild(link);
+    </script>
+    
+    <!-- Bootstrap CSS local fallback -->
+    <script>
+      var test = document.createElement("div");
+      test.className = "hidden d-none";
+      document.head.appendChild(test);
+      var cssLoaded = window.getComputedStyle(test).display === "none";
+      document.head.removeChild(test);
+  
+      if (!cssLoaded) {
+        var link = document.createElement("link");
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        link.href = "lib/bootstrap.min.css";
+  
+        document.head.appendChild(link);
+        }
+      </script>
+      <link rel="stylesheet" href="main.css">
+      <!-- Bootstrap JS CDN -->
+      <script src="~https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <!-- Bootstrap JS local fallback -->
+      <script>
+        if (typeof $.fn.modal === "undefined") {
+          document.write('<script src="lib/bootstrap.min.js"><\/script>');
+        }
+      </script>
     </div>
 
-    <!-- Bootstrap JS CDN -->
-    <script src="~https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- Bootstrap JS local fallback -->
-    <script>
-      if (typeof $.fn.modal === "undefined") {
-        document.write('<script src="lib/bootstrap.min.js"><\/script>');
-      }
-    </script>
   </body>
 </html>
+
+      
