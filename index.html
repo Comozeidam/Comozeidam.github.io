@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
       <title>Comozeidam</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" href="https://use.typekit.net/svz7tyd.css">
       <link rel="icon"  href="/img/favicon.ico">
-      <!--For Quick Loading the local copy of Bootstrap is used-->
-      
-      <link rel="stylesheet" href="lib\bootstrap.min.css">
+      <meta name="theme-color" content="#660000ff"/>
+      <link rel="shortcut icon" href="Images\favicon.ico"/>
       <meta name="description" content="This is the Red Globe blog.">
-	    <link rel="shortcut icon" href="Images\favicon.ico"/>
+	    <!--For Quick Loading the local copy of Bootstrap is used-->
+      <link rel="stylesheet" href="lib\bootstrap.min.css">
+      <link rel="stylesheet"  href="https://use.typekit.net/svz7tyd.css ">
+      <link rel="stylesheet" href="main.css">
     </head>
   <body class="primary mainfont">
 <nav class=" nav container-fluid opacity position-fixed">
@@ -34,7 +34,7 @@
       <div class=" container-fluid text-center">
         <h2 class="title">Featured Image</h2>
         <h5 class="title">Date Taken: Dec 7, 2020</h5>
-        <img class="img-fluid" src="img/image_50381057.JPG" alt="">
+        <img class="img-fluid" src="img/image_50381057.webp" alt="">
         <h4 class="text-black-50 ">Location: <a class="link-dark text-black-50 link-underline-opacity-0"href="https://essexcountyparks.org/parks/south-mountain-reservation">South Mountain
 						Reservation</a></h4>
         </div>
@@ -53,7 +53,7 @@
             </div>
           <div class="  col-5"><h2 class="title"> Articles:</h2>
             <div class=" mainfont p-4 pt-0 pb-0 ">
-              <a href="#" class=" link-underline-opacity-0 ">Tile</a>
+              <a href="#" class="link-underline link-underline-opacity-0 ">Title</a>
               <p class=" text-black-50">8-20-21</p>
               <a href="#" class="link-underline link-underline-opacity-0 ">Title</a>
               <p class=" text-black-50">10-9-2009</p>
@@ -76,7 +76,9 @@
     
     
     
-    <div>    <!-- Bootstrap CSS CDN -->
+    <div>   
+      
+       <!-- Bootstrap CSS CDN -->
       <script>
         var link = document.createElement("link");
         link.type = "text/css";
@@ -86,31 +88,10 @@
     </script>
     
     <!-- Bootstrap CSS local fallback -->
-    <script>
-      var test = document.createElement("div");
-      test.className = "hidden d-none";
-      document.head.appendChild(test);
-      var cssLoaded = window.getComputedStyle(test).display === "none";
-      document.head.removeChild(test);
-  
-      if (!cssLoaded) {
-        var link = document.createElement("link");
-        link.type = "text/css";
-        link.rel = "stylesheet";
-        link.href = "lib/bootstrap.min.css";
-  
-        document.head.appendChild(link);
-        }
-      </script>
-      <link rel="stylesheet" href="main.css">
+   
       <!-- Bootstrap JS CDN -->
-      <script src="~https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <!-- Bootstrap JS local fallback -->
-      <script>
-        if (typeof $.fn.modal === "undefined") {
-          document.write('<script src="lib/bootstrap.min.js"><\/script>');
-        }
-      </script>
+      <script src="lib/bootstrap.min.js"></script>
+     
     </div>
 
   </body>

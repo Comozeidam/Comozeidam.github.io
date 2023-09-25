@@ -24,8 +24,9 @@ header{
   font-size: 25px;
 }
 .mainfont{
-  font-family: "owners-text", sans-serif;
-  font-weight: 400;
+  font-family: "owners-text", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
   
   
 }
