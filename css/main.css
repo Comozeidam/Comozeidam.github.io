@@ -1,0 +1,85 @@
+/* CSS HEX 
+--avocado: #52711eff;
+--blood-red: #660000ff;
+--antiflash-white: #e7ecefff;
+*/
+/* for link bar box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23)*/
+.testimg {
+  height: 150px;
+  width:100%;
+  background:#660000;
+  text-align: center;
+  
+}
+
+.primary{
+background-color: #e7ecef;
+}
+.secondary{
+background-color: #660000;
+color: white;
+}
+.accent{
+background-color: #52711e;
+}
+header{
+  font-size: 25px;
+}
+.mainfont{
+  font-family: "owners-text", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  
+  
+}
+.linkToArticle:hover{
+  background-color:#52711e;
+  color: white;
+}
+.title{
+  font-family: "gelica", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+.nav{
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23)
+}
+img{
+  opacity: 1;
+ 
+}
+
+/*Sets height and width for the logo in the navbar*/
+.nav-img{
+
+  max-width: 100px; /*Change per your image*/
+  max-height: 100%; /*Change per your image*/
+}
+
+/*Used for scroll and text animations apply to elements that you need to animate*/
+.animate{
+  display: gridplace;
+  place-items: center;
+  align-content: center;
+  
+}
+/*Used for scroll and text animations apply to elements that you need to animate*/
+.hidden {
+  opacity:0;
+  transform: translateY(-50%);
+  filter: blur(5px);
+  transition: all 1s;
+}
+/*DO NOT CHANGE*/
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  filter:blur(0);
+}
+/*For people who prefer reduced motion*/
+@media(prefers-reduced-motion){
+  .hidden {
+      transition:none;
+
+  }
+}
